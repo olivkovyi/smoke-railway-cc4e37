@@ -1,0 +1,104 @@
+{
+  "name": "Calculateur de Délai de Livraison",
+  "description": "Outil gratuit pour calculer la date de livraison estimée en jours ouvrés",
+  "theme": "calculator",
+  "language": "fr",
+  "country": "FR",
+  "url": "https://test-calculator-fr.vercel.app",
+  "github": {
+    "status": "legacy"
+  },
+  "created": "2026-03-26T01:30:00",
+  "status": "ready",
+  "deployment": {
+    "status": "legacy"
+  },
+  "qa": {
+    "status": "fail",
+    "local": {
+      "status": "fail",
+      "checks": [
+        {
+          "name": "index_exists",
+          "status": "pass",
+          "detail": "index.html exists"
+        },
+        {
+          "name": "meta_exists",
+          "status": "pass",
+          "detail": "meta.json exists"
+        },
+        {
+          "name": "has_title",
+          "status": "pass",
+          "detail": "HTML contains a title tag"
+        },
+        {
+          "name": "has_viewport",
+          "status": "pass",
+          "detail": "HTML contains a mobile viewport meta tag"
+        },
+        {
+          "name": "has_canonical",
+          "status": "fail",
+          "detail": "HTML contains a canonical URL"
+        },
+        {
+          "name": "bundle_size",
+          "status": "pass",
+          "detail": "Generated HTML stays below 250KB"
+        }
+      ],
+      "checked_at": 1774533825
+    },
+    "remote": {
+      "status": "pass",
+      "checks": [
+        {
+          "name": "remote_200",
+          "status": "pass",
+          "detail": "Remote deployment returned HTTP 200"
+        },
+        {
+          "name": "remote_title",
+          "status": "pass",
+          "detail": "Remote HTML contains a title tag"
+        },
+        {
+          "name": "remote_body",
+          "status": "pass",
+          "detail": "Remote HTML contains a body tag"
+        }
+      ],
+      "checked_at": 1774533826
+    },
+    "visual": {
+      "status": "pass",
+      "desktop": {
+        "status": "pass",
+        "path": "/Users/tenpuzzles/Downloads/Codex/3/static/generated-qa/test-calculator-fr/test-calculator-fr-desktop.png",
+        "detail": "1440x960 screenshot captured.",
+        "relative_url": "/static/generated-qa/test-calculator-fr/test-calculator-fr-desktop.png"
+      },
+      "mobile": {
+        "status": "pass",
+        "path": "/Users/tenpuzzles/Downloads/Codex/3/static/generated-qa/test-calculator-fr/test-calculator-fr-mobile.png",
+        "detail": "430x932 screenshot captured.",
+        "relative_url": "/static/generated-qa/test-calculator-fr/test-calculator-fr-mobile.png"
+      },
+      "updated_at": 1774533850
+    },
+    "lighthouse": {
+      "status": "pass",
+      "scores": {
+        "performance": 98,
+        "accessibility": 91,
+        "best-practices": 96,
+        "seo": 90
+      },
+      "report_path": "/Users/tenpuzzles/Downloads/Codex/3/data/qa/lighthouse/test-calculator-fr-lighthouse.json",
+      "updated_at": 1774533885
+    },
+    "updated_at": "2026-03-26T14:04:45.694464+00:00"
+  }
+}
